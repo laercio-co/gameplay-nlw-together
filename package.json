@@ -8,7 +8,8 @@
     "eject": "expo eject",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.json",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx,.json --fix",
-    "prettier:format": "prettier --config .prettierrc '**/*.{json,js,jsx,ts,tsx,css,scss,md}' --write"
+    "prettier:format": "prettier --config .prettierrc '**/*.{json,js,jsx,ts,tsx,css,scss,md}' --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "expo": "~42.0.1",
@@ -29,6 +30,7 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
+    "husky": "^7.0.0",
     "prettier": "^2.3.2",
     "typescript": "~4.0.0"
   },
