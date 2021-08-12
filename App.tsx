@@ -9,6 +9,7 @@ import {
 } from '@expo-google-fonts/rajdhani';
 
 import { SignInScreen } from './src/screens/SignInScreen';
+import { Background } from './src/components/Background';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,13 +24,13 @@ export default function App() {
   }
 
   return (
-    <>
+    <Background>
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
       />
       <SignInScreen />
-    </>
+    </Background>
   );
 }
