@@ -8,8 +8,9 @@ import {
   Rajdhani_700Bold,
 } from '@expo-google-fonts/rajdhani';
 
-import { SignInScreen } from './src/screens/SignInScreen';
 import { Background } from './src/components/Background';
+// import { SignInScreen } from './src/screens/SignInScreen';
+import { HomeScreen } from './src/screens/HomeScreen';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -30,7 +31,8 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      <SignInScreen />
+      {/* <SignInScreen /> */}
+      <HomeScreen />
     </Background>
   );
 }
