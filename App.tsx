@@ -1,4 +1,7 @@
+import 'react-native-gesture-handler';
+
 import React from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'react-native';
 import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
@@ -9,8 +12,7 @@ import {
 } from '@expo-google-fonts/rajdhani';
 
 import { Background } from './src/components/Background';
-// import { SignInScreen } from './src/screens/SignInScreen';
-import { HomeScreen } from './src/screens/HomeScreen';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,14 +27,15 @@ export default function App() {
   }
 
   return (
-    <Background>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor="transparent"
-        translucent
-      />
-      {/* <SignInScreen /> */}
-      <HomeScreen />
-    </Background>
+    <SafeAreaProvider>
+      <Background>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor="transparent"
+          translucent
+        />
+        <Routes />
+      </Background>
+    </SafeAreaProvider>
   );
 }
