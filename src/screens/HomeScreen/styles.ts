@@ -9,7 +9,14 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 24,
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
     marginTop: 26,
     marginBottom: 42,
+  },
+  content: {
+    marginTop: 42,
+  },
+  matches: {
+    marginTop: 24,
   },
 });
